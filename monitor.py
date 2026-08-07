@@ -5,6 +5,9 @@ from datetime import datetime
 
 report_path = "reports/server_report.txt"
 
+#safty check for reports directory
+os.makedirs("reports", exist_ok=True)
+
 #system information
 hostname = platform.node()
 current_user = os.getlogin()
@@ -26,8 +29,8 @@ Used_disk_space_percentage = (used_disk_space / (used_disk_space + free_disk_spa
 
 
 #network information
-ip_address = os.subprocess.getoutput("hostname -I").strip()
-system_uptime = os.subprocess.getoutput("uptime -p").strip()
+ip_address = subprocess.getoutput("hostname -I").strip()
+system_uptime = subprocess.getoutput("uptime -p").strip()
 
 
 #report generation
