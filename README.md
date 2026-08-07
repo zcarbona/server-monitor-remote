@@ -44,7 +44,7 @@ server-health-check/
 ├── reports/
 │   └── server_report.txt
 │
-├── server_health.py
+├── monitor.py
 ├── requirements.txt
 └── README.md
 ```
