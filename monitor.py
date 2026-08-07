@@ -2,7 +2,7 @@ import os
 import psutil
 import platform
 import subprocess
-from socket import socket
+from socket import socket, gethostname, gethostbyname
 from datetime import datetime
 
 
@@ -33,7 +33,12 @@ Used_disk_space_percentage = (used_disk_space / (used_disk_space + free_disk_spa
 
 
 #network information
-ip_address = ip_address = socket.gethostbyname(socket.gethostname())
+try:
+    ip_address = socket.gethostbyname(socket.gethostname())
+except Exception:
+    ip_address = "N/A"
+
+
 system_uptime = subprocess.getoutput("uptime -p").strip()
 
 
