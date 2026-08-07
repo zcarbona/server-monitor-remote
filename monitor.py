@@ -1,4 +1,5 @@
 import os
+import psutil
 import platform
 import subprocess
 from datetime import datetime
@@ -16,10 +17,10 @@ Operating_system = platform.system()
 kernel_version = platform.release()
 
 #hardware information
-cpu_usage = os.getloadavg()
-total_memory = os.sysconf('SC_PAGE_SIZE') * os.sysconf('SC_PHYS_PAGES') / (1024. ** 3)
-used_memory = total_memory - (os.sysconf('SC_PAGE_SIZE') * os.sysconf('SC_AVPHYS_PAGES') / (1024. ** 3))
-free_memory = os.sysconf('SC_PAGE_SIZE') * os.sysconf('SC_AVPHYS_PAGES') / (1024. ** 3)
+cpu_usage = psutil.cpu_percent(interval=1)
+total_memory = psutil.virtual_memory().total / (1024. ** 3)
+used_memory = psutil.virtual_memory().used / (1024. ** 3)
+free_memory = psutil.virtual_memory().free / (1024. ** 3)
 used_memory_percentage = (used_memory / total_memory) * 100
 
 file_system = os.statvfs('/')
