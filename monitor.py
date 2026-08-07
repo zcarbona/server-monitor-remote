@@ -2,12 +2,15 @@ import os
 import psutil
 import platform
 import subprocess
+from socket import socket
 from datetime import datetime
 
-report_path = "reports/server_report.txt"
 
 #safty check for reports directory
 os.makedirs("reports", exist_ok=True)
+report_path = "reports/server_report.txt"
+
+
 
 #system information
 hostname = platform.node()
@@ -30,7 +33,7 @@ Used_disk_space_percentage = (used_disk_space / (used_disk_space + free_disk_spa
 
 
 #network information
-ip_address = subprocess.getoutput("hostname -I").strip()
+ip_address = ip_address = socket.gethostbyname(socket.gethostname())
 system_uptime = subprocess.getoutput("uptime -p").strip()
 
 
