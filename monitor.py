@@ -1,5 +1,6 @@
 import os
 import platform
+import subprocess
 from datetime import datetime
 
 report_path = "reports/server_report.txt"
