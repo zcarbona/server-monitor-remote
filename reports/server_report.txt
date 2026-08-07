@@ -1,0 +1,16 @@
+SERVER HEALTH CHECK
+Hostname: archlinux
+Current User: carbona
+Timestamp: 2026-08-07 03:28:55
+Operating System: Linux
+Kernel Version: 7.1.5-arch1-2
+CPU Usage: 8.6
+Total Memory: 15.40 GB
+Used Memory: 6.74 GB
+Free Memory: 0.80 GB
+Used Memory Percentage: 43.77%
+Used Disk Space: 25.73 GB
+Free Disk Space: 211.74 GB
+Used Disk Space Percentage: 10.84%
+IP Address: /bin/sh: line 1: hostname: command not found
+System Uptime: up 23 hours, 12 minutes
