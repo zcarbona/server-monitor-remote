@@ -6,28 +6,28 @@
 --------------------------------------------------
 Hostname                 : archlinux
 Current User             : carbona
-Timestamp                : 2026-08-07 04:14:10
+Timestamp                : 2026-08-07 04:28:28
 Operating System         : Linux
 Kernel Version           : 7.1.5-arch1-2
 
 [ CPU & MEMORY ]
 --------------------------------------------------
-CPU Load Average         : 17.6
+CPU Load Average         : 7.7
 Total Memory             : 15.40 GB
-Used Memory              : 7.36 GB
-Free Memory              : 0.36 GB
-Memory Usage             : 47.82%
+Used Memory              : 7.25 GB
+Free Memory              : 0.54 GB
+Memory Usage             : 47.08%
 
 [ STORAGE ]
 --------------------------------------------------
-Used Disk Space          : 0.00 GB
-Free Disk Space          : 7.70 GB
-Disk Usage               : 0.00%
+Used Disk Space          : 25.87 GB
+Free Disk Space          : 211.60 GB
+Disk Usage               : 10.89%
 
 [ NETWORK ]
 --------------------------------------------------
 IP Address               : N/A
-System Uptime            : up 23 hours, 57 minutes
+System Uptime            : up 1 day, 11 minutes
 
 ==================================================
 End of Report
