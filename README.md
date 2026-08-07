@@ -152,7 +152,14 @@ This project demonstrates practical experience with:
 - Working with third-party Python libraries
 - Report generation
 
+
 ---
+
+## Note
+
+Sometimes, when you use Arch, you just need to `sudo` things until they work.
+---
+
 
 ## 📜 License
 
